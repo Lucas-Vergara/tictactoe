@@ -1,0 +1,140 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+h1 * {  
+    padding-left: 10px;
+}
+
+h2 {
+    margin-left: 10vw;
+    color: brown;
+}
+
+#addPlayer {
+    margin-left: 10vw;
+}
+
+#container {
+    width: 90vw;
+    height: 60vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    height: 400px;
+    width:  400px;
+    background-image: url(images/board.png);
+    background-size: contain;
+}
+
+#playerModule {
+    background-color: palegreen;
+    border-radius: 10px;
+    position: relative;
+    width: 30vw;
+    margin-left: 100px;
+}
+
+#score {
+    padding-top: 50px;
+    padding-left: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+#buttons {
+    display: inline-block;
+    margin-left: -10%;
+    margin-bottom: 20px;
+}
+
+#goesFirst {
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+#winner {
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    font-size: 250%;
+    color: brown;
+    border: brown;
+    border-width: 2px;
+}
+
+#playAgain {
+    margin-left: 30%;
+}
+
+#clear {
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+}
+
+.player {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.circle {
+    background-image: url(images/circle.png);
+    background-repeat: no-repeat;
+    margin-left: 35px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    background-size: contain;
+}
+
+.cross {
+    background-image: url(images/cross.png);
+    background-repeat: no-repeat;
+    margin-left: 35px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    background-size: contain;
+}
+
+.blank {
+    background-size: 0 0;
+    background-image: url(images/cross.png);
+    margin-left: 35px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    background-repeat: no-repeat;
+}
+
+.circleSpan {
+    background-image: url(images/circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.crossSpan {
+    background-image: url(images/cross.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.hide {
+    visibility: hidden;
+}
